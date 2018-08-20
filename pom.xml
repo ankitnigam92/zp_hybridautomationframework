@@ -85,6 +85,8 @@
                                     <outputDirectory>target/cucumber-parallel/json</outputDirectory>
                                 </plugin>
                             </plugins>
+                            <namingPattern>Parallel{c}IT</namingPattern>
+                            <parallelScheme>SCENARIO</parallelScheme>
                             <format>html</format>
                             <strict>true</strict>
                             <monochrome>true</monochrome>
