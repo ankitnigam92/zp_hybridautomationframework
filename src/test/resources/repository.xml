@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pages>
+    <page name="Home">
+        <uiElements>
+            <uiobject name="Home" type="xpath"><locator>//title[contains(text(),'Hoogwaardig graanvrij hondenvoer') or contains(text(),'Hochwertiges getreidefreies Hundefutter')]</locator></uiobject>
+            <uiobject name="Country" type="xpath"><locator>//main//select[@name='code']</locator></uiobject>
+            <uiobject name="TrockenfutterTab" type="xpath"><locator>//a[@title='Trockenfutter']</locator></uiobject>
+            <uiobject name="NassfutterTab" type="xpath"><locator>//a[@title='Nassfutter']</locator></uiobject>
+            <uiobject name="SnacksTab" type="xpath"><locator>//a[@title='Snacks']</locator></uiobject>
+            <uiobject name="ProbierpaketeTab" type="xpath"><locator>//a[@title='Probierpakete']</locator></uiobject>
+            <uiobject name="AccessoiresTab" type="xpath"><locator>//a[@title='Accessoires']</locator></uiobject>
+            <uiobject name="WildFreedomTab" type="xpath"><locator>//a[@title='Wild Freedom']</locator></uiobject>
+            <uiobject name="AlleProductenTab" type="xpath"><locator>//a[@title='Alle Producten']</locator></uiobject>
+            <uiobject name="DroogvoerTab" type="xpath"><locator>//a[@title='Droogvoer']</locator></uiobject>
+            <uiobject name="NatvoerTab" type="xpath"><locator>//a[@title='Natvoer']</locator></uiobject>
+            <uiobject name="ProbeerverpakkingenTab" type="xpath"><locator>//a[@title='Probeerverpakkingen']</locator></uiobject>
+
+            <!--Nederland-->
+            <uiobject name="GemengdVlees" type="xpath"><locator>//span[contains(text(),'Gemengd vlees')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Gevogelte" type="xpath"><locator>//span[contains(text(),'Gevogelte')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Kip" type="xpath"><locator>//span[contains(text(),'Kip')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Konijn" type="xpath"><locator>//span[contains(text(),'Konijn')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Lam" type="xpath"><locator>//span[contains(text(),'Lam')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="RundAndKalfsvlees" type="xpath"><locator>//span[contains(text(),'Rund- &amp; kalfsvlees')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Vis" type="xpath"><locator>//span[contains(text(),'Vis')]/preceding-sibling::span</locator></uiobject>
+
+            <!--Deutschland-->
+            <uiobject name="Fisch" type="xpath"><locator>//span[contains(text(),'Fisch')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Geflügel" type="xpath"><locator>//span[contains(text(),'Geflügel')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="GemischtesFleisch" type="xpath"><locator>//span[contains(text(),'gemischtes Fleisch')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Huhn" type="xpath"><locator>//span[contains(text(),'Huhn')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Lamm" type="xpath"><locator>//span[contains(text(),'Lamm')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="RindAndKalb" type="xpath"><locator>//span[contains(text(),'Rind &amp; Kalb')]/preceding-sibling::span</locator></uiobject>
+            <uiobject name="Hase" type="xpath"><locator>//span[contains(text(),'Hase')]/preceding-sibling::span</locator></uiobject>
+            <!--<uiobject name="Bälle" type="xpath"><locator>//span[contains(text(),'Bälle')]/../preceding-sibling::input</locator></uiobject>-->
+            <!--<uiobject name="BefüllbaresSpielzeug" type="xpath"><locator>//span[contains(text(),'befüllbares Spielzeug')]/../preceding-sibling::input</locator></uiobject>-->
+            <!--<uiobject name="Taue" type="xpath"><locator>//span[contains(text(),'Taue')]/../preceding-sibling::input</locator></uiobject>-->
+            <!--<uiobject name="WeiteresSpielzeug" type="xpath"><locator>//span[contains(text(),'weiteres Spielzeug')]/../preceding-sibling::input</locator></uiobject>-->
+
+            <!--Common-->
+            <uiobject name="Wild" type="xpath"><locator>//span[contains(text(),'Wild')]/../preceding-sibling::input</locator></uiobject>
+            <uiobject name="SelectedFilters" type="xpath"><locator>//ul[@class='facet-list']/li</locator></uiobject>
+            <uiobject name="Spinner" type="xpath"><locator>//div[@class='pagination-bar text-center']//img</locator></uiobject>
+            <uiobject name="Flavour" type="xpath"><locator>//div[@data-facet-uid="flavour"]</locator></uiobject>
+
+
+
+        </uiElements>
+    </page>
+    <page name="AlleProducten">
+        <uiElements>
+            <uiobject name="AlleProducten" type="xpath"><locator>//title[contains(text(),'Premium hondenvoer')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Droogvoer">
+        <uiElements>
+            <uiobject name="Droogvoer" type="xpath"><locator>//title[contains(text(),'Graanvrij droogvoer voor honden')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Natvoer">
+        <uiElements>
+            <uiobject name="Natvoer" type="xpath"><locator>//title[contains(text(),'Graanvrij natvoer voor honden')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Snacks">
+        <uiElements>
+            <uiobject name="Snacks" type="xpath"><locator>//title[contains(text(),'Graanvrije snacks voor honden') or contains(text(),'Getreidefreie Hundesnacks &amp; Leckerlies')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Probeerverpakkingen">
+        <uiElements>
+            <uiobject name="Probeerverpakkingen" type="xpath"><locator>//title[contains(text(),'Graanvrij hondenvoer – probeerverpakkingen')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="WildFreedom">
+        <uiElements>
+            <uiobject name="WildFreedom" type="xpath"><locator>//title[contains(text(),'Hochwertiges getreidefreies Futter für Katzen')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Trockenfutter">
+        <uiElements>
+            <uiobject name="Trockenfutter" type="xpath"><locator>//title[contains(text(),'Getreidefreies Trockenfutter für Hunde')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Nassfutter">
+        <uiElements>
+            <uiobject name="Nassfutter" type="xpath"><locator>//title[contains(text(),'Getreidefreies Nassfutter für Hunde')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <page name="Probierpakete">
+        <uiElements>
+            <uiobject name="Probierpakete" type="xpath"><locator>//title[contains(text(),'Probierpakete - Getreidefreies Hundefutter')]</locator></uiobject>
+        </uiElements>
+    </page>
+    <!--<page name="Accessoires">-->
+        <!--<uiElements>-->
+            <!--<uiobject name="Accessoires" type="xpath"><locator>//title[contains(text(),'Zubehör für Hunde und Katzen')]</locator></uiobject>-->
+        <!--</uiElements>-->
+    <!--</page>-->
+</pages>
