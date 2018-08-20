@@ -77,7 +77,14 @@
                             <glue>zp.bdd</glue>
                             <outputDirectory>${project.build.directory}/generated-test-sources/cucumber</outputDirectory>
                             <featuresDirectory>src/test/resources/zp/bdd/</featuresDirectory>
-                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <cucumberOutputDir>target/cucumber-parallel/html</cucumberOutputDir>
+                            <plugins>
+                                <plugin>
+                                    <name>json</name>
+                                    <extension>json</extension>
+                                    <outputDirectory>target/cucumber-parallel/json</outputDirectory>
+                                </plugin>
+                            </plugins>
                             <format>html</format>
                             <strict>true</strict>
                             <monochrome>true</monochrome>
