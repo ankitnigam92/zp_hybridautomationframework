@@ -24,7 +24,7 @@ public class FirefoxBrowser {
         WebDriver driver = null;
         try {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
-            firefoxOptions.setCapability("platform",Platform.WIN10);
+            firefoxOptions.setCapability("platform",System.getProperty("platform"));
             driver = new RemoteWebDriver(new URL(System.getProperty("node") + "/wd/hub"), firefoxOptions);
             driver.manage().timeouts().implicitlyWait(Constants.SHORT_TIMEOUT, TimeUnit.SECONDS);
             driver.manage().window().maximize();

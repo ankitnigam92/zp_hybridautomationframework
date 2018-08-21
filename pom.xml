@@ -29,6 +29,7 @@
         <browser>chrome</browser>
         <node>http://localhost:4444</node>
         <forkCount>2</forkCount>
+        <platform>WINDOWS</platform>
     </properties>
 
 
@@ -43,6 +44,7 @@
                         <applicationURL>${applicationURL}</applicationURL>
                         <browser>${browser}</browser>
                         <node>${node}</node>
+                        <platform>${platform}</platform>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>

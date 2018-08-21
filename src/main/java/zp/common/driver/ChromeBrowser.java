@@ -22,7 +22,7 @@ public class ChromeBrowser {
         WebDriver driver = null;
         try {
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setCapability("platform", Platform.WIN10);
+            chromeOptions.setCapability("platform", System.getProperty("platform"));
             driver = new RemoteWebDriver(new URL(System.getProperty("node") + "/wd/hub"), chromeOptions);
             driver.manage().timeouts().implicitlyWait(Constants.SHORT_TIMEOUT, TimeUnit.SECONDS);
             driver.manage().window().maximize();
