@@ -104,7 +104,7 @@ public class VerifyAction extends AbstractBaseAction {
                 logger.info("List element count " + elements.size());
                 values = valuesAsList.split(";");
                 if (elements.size() == values.length) {
-                    unMatchItems = Arrays.stream(values).filter(x -> !elementValues.contains(x)).collect(Collectors.toList());
+                    unMatchItems = Arrays.stream(values).filter(x -> !elementValues.contains(x.trim())).collect(Collectors.toList());
                     if (unMatchItems.size() == 0) {
                         logger.info("All selected filters matched");
                         flag = true;

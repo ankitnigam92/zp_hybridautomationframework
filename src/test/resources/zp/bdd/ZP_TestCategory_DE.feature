@@ -72,7 +72,7 @@ Feature: Verify category with selection filter for DE
     Examples:
       |Country  |CategoryTab              |CategoryPage     |Filter                                         |FilterValues                                     |
       |DE       |TrockenfutterTab         |Trockenfutter    |Fisch;GemischtesFleisch;Huhn                   |Fisch;gemischtes Fleisch;Huhn                    |
-      |DE       |NassfutterTab            |Nassfutter       |Fisch;Geflügel;Huhn;Lamm;RindAndKalb;Wild      |Fisch;Geflügel;Huhn;Lamm;Rind & Kalb ;Wild       |
+      |DE       |NassfutterTab            |Nassfutter       |Fisch;Geflügel;Huhn;Lamm;RindAndKalb;Wild      |Fisch;Geflügel;Huhn;Lamm;Rind & Kalb;Wild       |
       |DE       |SnacksTab                |Snacks           |Fisch;Wild                                     |Fisch;Wild                                       |
       |DE       |ProbierpaketeTab         |Probierpakete    |Hase;Huhn                                      |Hase;Huhn                                        |
       |DE       |AccessoiresTab           |Accessoires      |Bälle;Taue;WeiteresSpielzeug                   |Bälle;Taue;weiteres Spielzeug                    |
