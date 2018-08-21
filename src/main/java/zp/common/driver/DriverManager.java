@@ -56,11 +56,6 @@ public class DriverManager extends EventFiringWebDriver {
         super.close();
     }
 
-    @Override
-    public EventFiringWebDriver register(WebDriverEventListener eventListener) {
-        return super.register(new ErrorListener());
-    }
-
     @Before
     public void deleteAllCookies() {
         logger.info("Deleting all cookies");
@@ -69,11 +64,15 @@ public class DriverManager extends EventFiringWebDriver {
 
     @After
     public void embedScreenshot(Scenario scenario) {
-        try {
-            byte[] screenshot = getScreenshotAs(OutputType.BYTES);
-            scenario.embed(screenshot, "image/png");
-        } catch (WebDriverException ex) {
-            logger.error(ex.getMessage());
+        if(scenario.isFailed()) {
+            try {
+                byte[] screenshot = getScreenshotAs(OutputType.BYTES);
+                String testName = scenario.getName();
+                scenario.embed(screenshot, "image/png");
+                scenario.write(testName);
+            } catch (WebDriverException ex) {
+                logger.error(ex.getMessage());
+            }
         }
     }
 }

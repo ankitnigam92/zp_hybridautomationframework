@@ -162,7 +162,7 @@ public class VerifyAction extends AbstractBaseAction {
             List<NameValuePair> queryParameters = new URIBuilder(uri).getQueryParams();
             logger.info("Query Parameter count"+ queryParameters.size());
 
-            List<String> removeValues = Arrays.asList("","relevance","flavour");
+            List<String> removeValues = Arrays.asList("","relevance","flavour","type_toy");
 
             List<String> actualFilters = Pattern.compile(":")
                     .splitAsStream(URLDecoder.decode(queryParameters.get(0).getValue(),"UTF-8"))

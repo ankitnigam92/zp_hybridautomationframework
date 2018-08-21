@@ -32,10 +32,10 @@
             <uiobject name="Lamm" type="xpath"><locator>//span[contains(text(),'Lamm')]/preceding-sibling::span</locator></uiobject>
             <uiobject name="RindAndKalb" type="xpath"><locator>//span[contains(text(),'Rind &amp; Kalb')]/preceding-sibling::span</locator></uiobject>
             <uiobject name="Hase" type="xpath"><locator>//span[contains(text(),'Hase')]/preceding-sibling::span</locator></uiobject>
-            <!--<uiobject name="Bälle" type="xpath"><locator>//span[contains(text(),'Bälle')]/../preceding-sibling::input</locator></uiobject>-->
-            <!--<uiobject name="BefüllbaresSpielzeug" type="xpath"><locator>//span[contains(text(),'befüllbares Spielzeug')]/../preceding-sibling::input</locator></uiobject>-->
-            <!--<uiobject name="Taue" type="xpath"><locator>//span[contains(text(),'Taue')]/../preceding-sibling::input</locator></uiobject>-->
-            <!--<uiobject name="WeiteresSpielzeug" type="xpath"><locator>//span[contains(text(),'weiteres Spielzeug')]/../preceding-sibling::input</locator></uiobject>-->
+            <uiobject name="Bälle" type="xpath"><locator>//span[contains(text(),'Bälle')]/../preceding-sibling::input</locator></uiobject>
+            <uiobject name="BefüllbaresSpielzeug" type="xpath"><locator>//span[contains(text(),'befüllbares Spielzeug')]/../preceding-sibling::input</locator></uiobject>
+            <uiobject name="Taue" type="xpath"><locator>//span[contains(text(),'Taue')]/../preceding-sibling::input</locator></uiobject>
+            <uiobject name="WeiteresSpielzeug" type="xpath"><locator>//span[contains(text(),'weiteres Spielzeug')]/../preceding-sibling::input</locator></uiobject>
 
             <!--Common-->
             <uiobject name="Wild" type="xpath"><locator>//span[contains(text(),'Wild')]/../preceding-sibling::input</locator></uiobject>
@@ -92,9 +92,9 @@
             <uiobject name="Probierpakete" type="xpath"><locator>//title[contains(text(),'Probierpakete - Getreidefreies Hundefutter')]</locator></uiobject>
         </uiElements>
     </page>
-    <!--<page name="Accessoires">-->
-        <!--<uiElements>-->
-            <!--<uiobject name="Accessoires" type="xpath"><locator>//title[contains(text(),'Zubehör für Hunde und Katzen')]</locator></uiobject>-->
-        <!--</uiElements>-->
-    <!--</page>-->
+    <page name="Accessoires">
+        <uiElements>
+            <uiobject name="Accessoires" type="xpath"><locator>//title[contains(text(),'Zubehör für Hunde und Katzen')]</locator></uiobject>
+        </uiElements>
+    </page>
 </pages>
