@@ -6,10 +6,8 @@ package zp.bdd;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
-import java.nio.file.Paths;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(

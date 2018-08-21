@@ -15,7 +15,7 @@
 
     <properties>
         <!--Mvn properties-->
-        <cucumber-version>1.2.5</cucumber-version>
+        <cucumber-version>3.0.2</cucumber-version>
         <lombok.version>1.16.20</lombok.version>
         <spring.version>5.0.3.RELEASE</spring.version>
         <selenium-server.version>3.12.0</selenium-server.version>
@@ -28,7 +28,7 @@
         <applicationURL>https://www.wolf-of-wilderness.com</applicationURL>
         <browser>chrome</browser>
         <node>http://localhost:4444</node>
-        <test.parallel.count>2</test.parallel.count>
+        <forkCount>2</forkCount>
     </properties>
 
 
@@ -53,7 +53,7 @@
                             <goal>test</goal>
                         </goals>
                         <configuration>
-                            <forkCount>${test.parallel.count}</forkCount>
+                            <forkCount>${forkCount}</forkCount>
                             <reuseForks>true</reuseForks>
                             <includes>
                                 <include>**/*IT.class</include>
@@ -107,18 +107,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber-version}</version>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber-version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-spring</artifactId>
             <version>${cucumber-version}</version>
         </dependency>

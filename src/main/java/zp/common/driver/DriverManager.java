@@ -1,18 +1,17 @@
 package zp.common.driver;
 
 import cucumber.api.Scenario;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import zp.common.contants.Constants;
 
-import java.util.concurrent.TimeUnit;
 import static zp.common.driver.BrowserFactory.getBrowser;
 
 /**
@@ -26,6 +25,7 @@ public class DriverManager extends EventFiringWebDriver {
         @Override
         public void run() {
             REAL_DRIVER.close();
+            REAL_DRIVER.quit();
         }
     };
 

@@ -1,17 +1,13 @@
 package zp.common.action;
 
-import gherkin.lexer.Th;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import zp.common.utils.ZPHelper;
 
-import java.security.acl.LastOwnerException;
 
 /**
  * Created by AnkitNigam.
