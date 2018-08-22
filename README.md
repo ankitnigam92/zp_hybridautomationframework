@@ -19,13 +19,14 @@ _In this framework I have tried catering all the requirements mentioned in the a
 
 :exclamation: I have checkedin binaries on the github to facilitate the execution via Jenkins. In real work we keep 
 selenium-server-standalone.jar and driver exe on server and node machines.
+
 :exclamation: In absence of mutiple machines I am using single machine to create 1 Hub and 2 Nodes.
 
 ## Running the tests
 
 All test cases are available under **\test\resources\zp\bdd** folder. 
 
-[Import attached AutomationJob.xml file in Jenkins and click build now](https://github.com/ankitnigam92/zp_hybridautomationframework/raw/master/jenkins_config/AutomationJob.xml))
+[Import attached AutomationJob.xml file in Jenkins and click build now](https://github.com/ankitnigam92/zp_hybridautomationframework/raw/master/jenkins_config/AutomationJob.xml)
 
 ```
 java -jar jenkins-cli.jar -s http://jenkins-server create-job AutomationJob < AutomationJob.xml
