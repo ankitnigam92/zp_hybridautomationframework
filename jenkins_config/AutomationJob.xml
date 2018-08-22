@@ -28,10 +28,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>START /B java -jar %WORKSPACE%\selenium-server-standalone.jar -port 4444 -role hub -browserTimeout 60 -timeout 45&#xd;
-&#xd;
-&#xd;
-</command>
+      <command>START /B java -jar %WORKSPACE%\selenium-server-standalone.jar -port 4444 -role hub -browserTimeout 60 -timeout 45</command>
     </hudson.tasks.BatchFile>
     <hudson.tasks.BatchFile>
       <command>START /B java -Dwebdriver.chrome.driver=%WORKSPACE%\drivers\chromedriver\chromedriver.exe -jar %WORKSPACE%\selenium-server-standalone.jar -role node -hub http://localhost:4444/grid/register -port 5566 -browser browserName=chrome,maxInstances=4 -maxSession 4</command>
